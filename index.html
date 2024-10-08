@@ -2,51 +2,61 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site démo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
 <div class="container">
-        <h2>Formulaire d'inscription</h2>
-        <form id="registrationForm">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" >
+    <h1>Calculatrice</h1>
+    <div class="calculator">
+        <input type="number" id="number1" placeholder="Nombre 1">
+        <input type="number" id="number2" placeholder="Nombre 2">
+        <button id="calculateBtn">Calculer la somme</button>
+        <p id="result"></p>
+    </div>
+</div>
+<div class="container">
+    <h1>Formulaire</h1>
+    <form id="myForm">
+        <label>Prénom</label>
+        <input type="text" id="firstName" placeholder="Prénom">
+        <p id="firstNameError" class="error-message"></p>
 
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" >
+        <label>Nom</label>
+        <input type="text" id="lastName" placeholder="Nom">
+        <p id="lastNameError" class="error-message"></p>
 
-            <label for="email">Adresse email :</label>
-            <input type="email" id="email" name="email" >
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Âge" min="1">
+        <p id="ageError" class="error-message"></p>
 
-            <label for="code_postal">Code postal :</label>
-            <input type="text" id="code_postal" name="code_postal" >
+        <label>Mot de Passe</label>
+        <input type="password" id="password" placeholder="Mot de passe">
+        <p id="passwordError" class="error-message"></p>
 
-            <label for="ville">Ville :</label>
-            <input type="text" id="ville" name="ville" >
+        <button type="submit">Soumettre</button>
+        <p id="formMessage"></p>
+    </form>
+</div>
 
-            <input type="submit" value="Envoyer">
-        </form>
-    </div>  <script src="js/app.js"></script>
-
+<script src="js/app.js"></script>
 </body>
 
 </html>
